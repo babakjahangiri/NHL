@@ -14,13 +14,19 @@
 .ImgContent {
     display: grid;
     background-color: #dadada;
-    height: 800px;
+    /* Set a specific height */
+    min-height: 800px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 8em;
     font-weight: 500;
     color: #727272;
     text-align: center;
     align-items: center;
+    background-image: url("images/bg1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .TextContent {
