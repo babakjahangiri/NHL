@@ -1,6 +1,15 @@
+.logoblock {
+    position: absolute;
+    margin: 0px;
+    top: 0;
+    left: 0;
+}
+
 .logo {
-    background-color: #ffffff;
-    margin: 20px;
+    display: block;
+    height: auto;
+    max-width: 150px;
+    margin: 30px;
 }
 
 .menu {
@@ -11,11 +20,10 @@
     align-items: center;
 }
 
-.ImgContent {
-    display: grid;
-    background-color: #dadada;
+.firstcol {
+    background-color: #711c1b;
     /* Set a specific height */
-    min-height: 800px;
+    min-height: 1000px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 8em;
     font-weight: 500;
@@ -29,16 +37,36 @@
     background-size: cover;
 }
 
-.TextContent {
-    display: grid;
+.secondcol {
+    display: flex;
+    position: relative;
+    min-height: 1000px;
     text-align: center;
     align-items: center;
-    background-color: beige;
-    height: 800px;
-    color: #727272;
+    text-align: center;
+    align-items: center;
+    background-image: url("images/bg2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.secondcol p {
+    /* color: #711c1b;*/
+    color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 8em;
+    font-size: 2em;
     font-weight: 500;
+    margin: 50px;
+}
+
+.donation {
+    width: 50%;
+    height: auto;
+    background-color: #1B7036;
+    opacity: 0.8;
+    margin: 0 auto;
 }
 
 .footer {
