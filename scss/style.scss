@@ -1,0 +1,229 @@
+@import "_breakpoints.scss";
+@import "_variables.scss";
+@import "_body.scss";
+@import "_menu.scss";
+@import "_mixin.scss";
+
+
+
+
+
+.no-gutters{
+    padding-right: 0;
+    padding-left: 0;
+}
+ 
+
+.home-menu{
+    display: block;
+    @include background-opacity(#fff, 0.5);
+    margin-top: 25px;
+    height: 70px;
+    width: 800px;
+    margin-right: 0;
+    float:right;
+    
+  .main-nav {
+    display:flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-start: 10px;
+    list-style-type: none;
+    margin: 0 10px 0 10px;
+    height: 100%;
+    
+
+    > li{
+        white-space: nowrap;
+        color:$link-color;
+        height: 100%;
+     
+        &:hover:focus-within> ul > li{
+            visibility: visible;
+            display: block;
+            flex: 1;
+        }
+        
+        &:focus-within> ul > li{
+            visibility: visible;
+            display: block;
+            flex: 1;
+        }
+
+
+       > a{
+            color:$link-color;
+            font-size: 1.7em;
+            font-weight: 500;
+            text-decoration: none; 
+            padding: 12px 8px 18px 8px;
+            line-height: 2.7em;
+             
+            &:hover{
+              background-color: rgba($color: #fff, $alpha: 0.8);
+                border-top: 7px $link-color solid;
+            }
+
+            &:focus{
+                background-color: rgba($color: #fff, $alpha: 0.8);
+                border-top: 7px $link-color solid;
+            }
+                   
+        }
+        ul {
+            padding:0;
+        }
+        ul li{
+            clear: both;
+            display: none;
+            list-style: none;
+            @include background-opacity(#fff, 0.7);
+            line-height: 2.7em;
+            padding: 5px;
+
+            &:hover{
+                visibility: visible;
+                display: flex;
+                flex-direction: column;
+                justify-content:flex-start;
+            }
+
+            > a{
+                display: block;
+                color:$link-color;
+                font-size: 1.2em;
+                font-weight: 500;
+                text-decoration: none; 
+                padding: 5px 10px 5px 10px;
+
+                &:hover{
+                    background-color: rgba($color: #fff, $alpha: 0.9);
+                }
+
+                &:focus{
+                     background-color: rgba($color: #fff, $alpha: 0.9);
+                      
+                 }
+            }
+        }
+
+        > ul.home-menu-drop{
+            position: absolute;
+            display: block;
+            top: 100%;
+            min-width: 30%;
+             
+        }
+
+     }
+   }
+ 
+ }
+ 
+
+
+.logo {
+    display: block;
+    height: auto;
+    max-width: 150px;
+    margin: 10px;
+    top: 10px;
+}
+
+
+.firstrow{ 
+    background-color: $primary-color;
+    /* Set a specific height */
+    min-height: 1000px;
+    color: #727272;
+    text-align: left;
+    align-items: flex-start;
+    background-image: url("../../images/bg1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.secondrow {
+    display: flex;
+    position: relative;
+    min-height: 1000px;
+    text-align: left;
+    align-items: center;
+    background-image: url("../../images/bg2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    p {
+        color: #ffffff;
+        font-size: 2em;
+        font-weight:500;
+        margin: 50px;
+    }
+}
+
+.donation {
+    width: 50%;
+    height: auto;
+    background-color: rgba($color:$secondary-color, $alpha: 0.8);
+    font-weight: 500;
+    font-size: 1.3em;
+    margin-left: 0;
+    float: left;
+}
+
+
+
+.thirdrow {
+
+    min-height: 500px;
+    position: relative;
+  
+    &::after {
+         content: "";
+         background-color:$secondary-bgcolor;
+         background-image: url("../../images/bw-afrop.jpg");
+         background-repeat: repeat;
+         opacity: 0.02;
+         top: 0;
+         left: 0;
+         bottom: 0;
+         right: 0;
+         position: absolute;
+         z-index: -1;
+     }
+
+    div {
+        padding: 10px;
+        text-align: center;
+
+    }
+
+  
+
+   
+}
+
+ .activityp{
+     margin-top: 15px;
+ }
+
+
+
+.footer {
+    display: grid;
+    background-color: #333333;
+    height: 500px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    color: #727272;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 8em;
+    font-weight: 500;
+}
+
