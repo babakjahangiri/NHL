@@ -6,131 +6,12 @@
 
 
 
-
-
 .no-gutters{
     padding-right: 0;
     padding-left: 0;
 }
- 
-
-.home-menu{
-    display: block;
-    @include background-opacity(#fff, 0.5);
-    margin-top: 25px;
-    height: 70px;
-    width: 800px;
-    margin-right: 0;
-    float:right;
-    
-  .main-nav {
-    display:flex;
-    position: relative;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-inline-start: 10px;
-    list-style-type: none;
-    margin: 0 10px 0 10px;
-    height: 100%;
-    
-
-    > li{
-        white-space: nowrap;
-        color:$link-color;
-        height: 100%;
-     
-        &:hover:focus-within> ul > li{
-            visibility: visible;
-            display: block;
-            flex: 1;
-        }
-        
-        &:focus-within> ul > li{
-            visibility: visible;
-            display: block;
-            flex: 1;
-        }
 
 
-       > a{
-            color:$link-color;
-            font-size: 1.7em;
-            font-weight: 500;
-            text-decoration: none; 
-            padding: 12px 8px 18px 8px;
-            line-height: 2.7em;
-             
-            &:hover{
-              background-color: rgba($color: #fff, $alpha: 0.8);
-                border-top: 7px $link-color solid;
-            }
-
-            &:focus{
-                background-color: rgba($color: #fff, $alpha: 0.8);
-                border-top: 7px $link-color solid;
-            }
-                   
-        }
-        ul {
-            padding:0;
-        }
-        ul li{
-            clear: both;
-            display: none;
-            list-style: none;
-            @include background-opacity(#fff, 0.7);
-            line-height: 2.7em;
-            padding: 5px;
-
-            &:hover{
-                visibility: visible;
-                display: flex;
-                flex-direction: column;
-                justify-content:flex-start;
-            }
-
-            > a{
-                display: block;
-                color:$link-color;
-                font-size: 1.2em;
-                font-weight: 500;
-                text-decoration: none; 
-                padding: 5px 10px 5px 10px;
-
-                &:hover{
-                    background-color: rgba($color: #fff, $alpha: 0.9);
-                }
-
-                &:focus{
-                     background-color: rgba($color: #fff, $alpha: 0.9);
-                      
-                 }
-            }
-        }
-
-        > ul.home-menu-drop{
-            position: absolute;
-            display: block;
-            top: 100%;
-            min-width: 30%;
-             
-        }
-
-     }
-   }
- 
- }
- 
-
-
-.logo {
-    display: block;
-    height: auto;
-    max-width: 150px;
-    margin: 10px;
-    top: 10px;
-}
 
 
 .firstrow{ 
@@ -179,9 +60,8 @@
 
 
 .thirdrow {
-
-    min-height: 500px;
     position: relative;
+    padding: 20px 50px 20px 50px;
   
     &::after {
          content: "";
@@ -198,7 +78,7 @@
      }
 
     div {
-        padding: 10px;
+        padding: 0 10px 0 10px;
         text-align: center;
 
     }
@@ -209,9 +89,31 @@
 }
 
  .activityp{
-     margin-top: 15px;
- }
+     display: block;
+     min-height: 100%;
+     padding: 20px 10px 0 10px;
 
+     img{
+        position: relative;
+         border: black 1px solid;
+         height: 95%;
+         width: 95%;
+         }
+
+       h3{
+            float: left;
+            margin: 5px;
+            padding: 5px 0 10px 5px;
+            font-size: 1.4em;
+            font-weight: 600;
+            text-align: left;
+            color:$link-color;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none; 
+
+            > span{ font-size: 0.8em;}
+        }
+ }
 
 
 .footer {
@@ -227,3 +129,153 @@
     font-weight: 500;
 }
 
+
+.logo {
+    display: relative;
+    height: auto;
+    min-width: 40px;
+    width: 100px;
+    margin: 20px;
+     
+ //   float: left;
+}
+
+
+
+.page_header{
+    background-color: #727272;
+    min-height: 900px;
+   //height:auto;
+   color: #727272;
+   text-align: left;
+   align-items: flex-start;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 7vw)
+  );
+
+  //SVG
+}
+
+.aboutus_bg {
+    background-image: url("../../images/bgp_aboutus.jpg");
+}
+
+.ourstory_bg {
+    background-image: url("../../images/bgp_aboutus.jpg");
+}
+
+.ourteam_bg {
+    background-image: url("../../images/bgp_aboutus.jpg");
+}
+
+.adultsupport_bg{ 
+     background-image: url("../../images/bgp_adls.jpg");
+}
+
+.chilactivity_bg{ 
+    background-image: url("../../images/bgp_childrenact.jpg");
+}
+
+.elderlyspace_bg{ 
+    background-image: url("../../images/bgp_elderly.jpg");
+}
+
+.ovp_bg{ 
+    background-image: url("../../images/bgp_ovp.jpg");
+}
+
+
+.volunteer_bg{ 
+    background-image: url("../../images/bgp_ovp.jpg");
+}
+
+.donate_bg{ 
+    background-image: url("../../images/bgp_ovp.jpg");
+}
+
+
+.fundraise_bg{ 
+    background-image: url("../../images/pgp_foundraise.jpg");
+}
+
+.contactus_bg{ 
+    background-image: url("../../images/bgp_ovp.jpg");
+}
+
+ 
+.secondrowpage{
+    //position: relative;
+    background-color: #fff;
+    min-height: 1000px;
+
+}
+
+ 
+.page-title{
+ position: relative;
+ bottom: 70px;
+font-weight: 600;
+color: $primary-color;
+font-size: 4.5em;
+padding: 20px;
+font-family: 'Roboto', sans-serif;
+width: 60%;
+//align-items: baseline;
+}
+
+.page-sub-title
+{
+    position: relative;
+    font-weight: 500;
+    color: $secondary-color;
+    font-size: 2em;
+    padding: 10px 0 40px 10px;
+    font-family: 'Roboto', sans-serif;
+    height:auto;
+
+}
+
+
+.page-p-title{
+    color: teriary-color;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 10px 0 10px 8px;
+    font-family: 'Roboto', sans-serif;
+    height:auto;
+}
+
+h3.page-sub-title{
+   color: teriary-color;
+    font-size: 1.2em;
+    font-weight: 400;
+    padding: 10px 0 10px 8px;
+    font-family: 'Roboto', sans-serif;
+    height:auto; 
+ 
+}
+
+.content-text{
+
+font-size: 1.5em;
+background-color: #fff;
+font-family: 'Roboto', sans-serif;
+padding: 0 50px 60px 50px;
+text-align: justify;
+text-justify:auto;
+line-height: 1.8em;
+
+}
+
+.p-note{
+    color:$primary-color;
+}
+ 

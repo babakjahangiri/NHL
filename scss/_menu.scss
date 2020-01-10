@@ -1,13 +1,130 @@
 @import "_variables.scss";
+@import "_mixin.scss";
 
+.home-menu {
+  display: block;
+  @include background-opacity(#fff, 0.5);
+  margin-top: 25px;
+  height: 70px;
+  width: 750px;
+  margin-right: 0;
+  float: right;
+}
 
+.main-nav {
+  display: flex;
+  position: sticky;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline-start: 10px;
+  list-style-type: none;
+  margin: 0 10px 0 10px;
+  height: 100%;
 
+  > li {
+    //display:block;
+    white-space: nowrap;
+    color: $link-color;
+    height: 100%;
 
+    &:hover:focus-within > ul > li {
+      visibility: visible;
+      display: block;
+      flex: 1;
+    }
 
+    &:focus-within > ul > li {
+      visibility: visible;
+      display: block;
+      flex: 1;
+    }
 
+    > a {
+      display: relative;
+      display: block;
+      height: 100%;
+      color: $link-color;
+      padding-top: 7px;
 
+      font-size: 1.7em;
+      font-weight: 500;
+      text-decoration: none;
+      padding: 12px 8px 18px 8px;
+      line-height: 1.9em;
 
+      &:hover {
+        background-color: rgba($color: #fff, $alpha: 0.8);
+        border-top: 7px $link-color solid;
+        padding: 5px 8px 18px 8px;
+      }
 
+      &:focus {
+        background-color: rgba($color: #fff, $alpha: 0.8);
+        border-top: 7px $link-color solid;
+        padding: 5px 8px 18px 8px;
+      }
+    }
 
+    ul {
+      padding: 0;
+      position: absolute;
+      top: 100%;
+      min-width: 30%;
+    }
 
+    ul li {
+      // clear: both;
+      display: none;
+      list-style: none;
+      @include background-opacity(#fff, 0.7);
+      line-height: 2.7em;
+      padding: 5px;
 
+      &:hover {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+
+      > a {
+        display: block;
+        color: $link-color;
+        font-size: 1.2em;
+        font-weight: 500;
+        text-decoration: none;
+        padding: 5px 10px 5px 10px;
+
+        &:hover {
+          background-color: rgba($color: #fff, $alpha: 0.9);
+        }
+
+        &:focus {
+          background-color: rgba($color: #fff, $alpha: 0.9);
+        }
+      }
+    }
+  }
+}
+
+//------ Menu for the rest of the pages ----
+
+.page-menu {
+  // @include background-opacity(#fff, 0.5);
+  margin-top: 25px;
+  height: 70px;
+  width: 700px;
+  margin-right: 0;
+  float: right;
+  bottom: 0;
+}
+
+.nav-wrapper {
+  top: 0;
+  position: relative;
+  display: flow-root;
+  @include background-opacity(#fff, 0.7);
+}
+
+// ------------
