@@ -1,0 +1,104 @@
+
+.page_header{
+   display: block;
+   //height:auto;
+   text-align: left;
+   align-items: flex-start;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-color: #727272;
+   
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 75%);
+  
+}
+
+.page-cut{
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 calc(100% - 7vw)
+      );
+}
+
+@include respond-above(md)
+{
+    .page_header{
+        background-size: cover;
+        min-height: 900px;
+        background-position: center;
+    }
+
+}
+
+
+@include respond-between(sm,md)
+{
+    .page_header{
+        background-size: cover;
+       min-height: 400px;
+       background-position: top;
+      background-repeat: repeat;
+        }
+}
+
+@include respond-below(sm)
+{
+.page_header{
+        background-size: cover;
+        min-height: 300px;
+        align-items: flex-start;
+       background-position: top;
+      background-repeat: repeat;
+        }
+}
+
+
+.aboutus_bg {
+    background-image: url("../../images/bgp_aboutus.jpg");
+}
+
+.ourstory_bg {
+    background-image: url("../../images/bgp_aboutus.jpg");
+}
+
+.ourteam_bg {
+    background-image: url("../../images/bgp_aboutus.jpg");
+}
+
+.adultsupport_bg{ 
+     background-image: url("../../images/bgp_adls.jpg");
+}
+
+.chilactivity_bg{ 
+    background-image: url("../../images/bgp_childrenact.jpg");
+}
+
+.elderlyspace_bg{ 
+    background-image: url("../../images/bgp_elderly.jpg");
+}
+
+.ovp_bg{ 
+    background-image: url("../../images/bgp_ovp.jpg");
+}
+
+
+.volunteer_bg{ 
+    background-image: url("../../images/bgp_ovp.jpg");
+}
+
+.donate_bg{ 
+    background-image: url("../../images/bgp_ovp.jpg");
+}
+
+
+.fundraise_bg{ 
+    background-image: url("../../images/pgp_foundraise.jpg");
+}
+
+.contactus_bg{ 
+    background-image: url("../../images/bgp_ovp.jpg");
+}
+
+ 

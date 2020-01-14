@@ -1,0 +1,22 @@
+@include respond-below(lg)
+{
+
+.logo{
+    margin: 0;
+    height: 80px;
+    width :auto;
+}
+
+}
+
+@include respond-above(md)
+{
+
+.logo {
+    display: relative;
+    height: auto;
+    min-width: 40px;
+    width: 100px;
+    margin: 20px;
+     }
+}

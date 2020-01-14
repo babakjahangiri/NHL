@@ -27,6 +27,7 @@
     white-space: nowrap;
     color: $link-color;
     height: 100%;
+    
 
     &:hover:focus-within > ul > li {
       visibility: visible;
@@ -74,7 +75,7 @@
     }
 
     ul li {
-      // clear: both;
+        clear: both;
       display: none;
       list-style: none;
       @include background-opacity(#fff, 0.7);
@@ -128,3 +129,14 @@
 }
 
 // ------------
+
+.mob-menu-wrapper
+{
+ // display: block;
+ // z-index: 500;
+ // position: fixed;
+}
+
+.bg-white-trasparent{
+  @include background-opacity(#fff, 0.8);
+}
